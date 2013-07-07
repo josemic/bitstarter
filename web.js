@@ -9,7 +9,7 @@ app.get('/', function(request, response) {
 });
 
 function readfile(filename){
-    fs.readFile(filename, function (err, data) {
+    return fs.readFile(filename, function (err, data) {
 	if (err) throw err;
 	console.log(data);
     });
