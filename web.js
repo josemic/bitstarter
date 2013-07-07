@@ -12,6 +12,7 @@ function readfile(filename){
     return fs.readFile(filename, function (err, data) {
 	if (err) throw err;
 	console.log(data);
+	return data;
     });
 }
 
